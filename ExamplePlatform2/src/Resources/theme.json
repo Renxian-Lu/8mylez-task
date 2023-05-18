@@ -1,0 +1,57 @@
+{
+  "name": "ExamplePlatform2",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@ExamplePlatform2"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@StorefrontBootstrap",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/example-platform2.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "blocks": {
+      "jsPlugins": {
+        "label": {
+          "en-GB": "JS Plugins",
+          "de-DE": "JS Plugins"
+        }
+      }
+    },
+    "fields": {
+      "activateStickyHeader": {
+        "label": {
+          "en-GB": "Use Sticky Header",
+          "de-DE": "Benutzen"
+        },
+        "type": "switch",
+        "custom": {
+          "bordered": true
+        },
+        "value": true,
+        "editable": true,
+        "block": "jsPlugins"
+      },
+      "showOnScrollPosition": {
+          "label": {
+            "en-GB": "Sticky Header Show Scroll Position",
+            "de-DE": "Klebriger Kopf Position"
+          },
+          "type": "int",
+          "value": 500,
+          "editable": true,
+          "block": "jsPlugins"
+      }
+    }
+  }
+}

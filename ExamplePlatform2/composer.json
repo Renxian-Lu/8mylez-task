@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ExamplePlatform2\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "ExamplePlatform2\\ExamplePlatform2",
+    "label": {
+      "de-DE": "Theme ExamplePlatform2 plugin",
+      "en-GB": "Theme ExamplePlatform2 plugin"
+    }
+  }
+}

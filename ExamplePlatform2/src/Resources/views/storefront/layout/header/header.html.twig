@@ -1,0 +1,50 @@
+{% sw_extends "@Storefront/storefront/layout/header/header.html.twig" %}
+
+{% block layout_header_navigation %}
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <nav class="navbar navbar-light navbar-expand-lg bg-light p-lg-0">
+    <div class="container bg-lg-white py-lg-4">
+      <a href="#" class="navbar-brand">
+        <img src="{{ asset('/assets/logo.png', 'theme') }}" wwidth="127.61" height="22.79" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hb">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse font-weight-bold" id="hb">
+        <ui class="nav navbar-nav justify-content-center w-100 text-center">
+          <li class="nav-item mx-3" id="DAMEN"><a href="index.html" class="nav-link">DAMEN</a></li>
+          <li class="nav-item mx-3" id="HERREN"><a href="Product.html" class="nav-link">HERREN</a></li>
+          <li class="nav-item mx-3" id="SALE"><a href="article.html" class="nav-link">SALE</a></li>
+          <li class="nav-item mx-3" id="FASHIONEIGHT"><a href="help.html" class="nav-link">#FASHIONEIGHT</a></li>
+
+        </ui>
+        <div class="box d-lg-block d-none">
+          <div class="bottom d-flex justify-content-between">
+            <img class="mr-3" src="{{ asset('/assets/1.png', 'theme') }}" alt="">
+            <img class="mr-3" src="{{ asset('/assets/2.png', 'theme') }}" alt="">
+            <img class="mr-3" src="{{ asset('/assets/3.png', 'theme') }}" alt="">
+            <img class="mr-3" src="{{ asset('/assets/4.png', 'theme') }}" alt="">
+          </div>
+        </div>
+        <div class="box d-block d-lg-none my-3">
+          <div class="d-lg-none bottom d-flex justify-content-between">
+            <img class="mr-3" src="{{ asset('/assets/11.png', 'theme') }}" alt="">
+            <img class="mr-3" src="{{ asset('/assets/33.png', 'theme') }}" alt="">
+            <img class="mr-3" src="{{ asset('/assets/22.png', 'theme') }}" alt="">
+            <img class="mr-3" src="{{ asset('/assets/44.png', 'theme') }}" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+{% endblock %}
+
+
+{% block layout_header_search %}
+{% endblock %}
+
+{% block layout_header_actions_cart %}
+{% endblock %}
+
+{% block layout_header_actions %}
+{% endblock %}
